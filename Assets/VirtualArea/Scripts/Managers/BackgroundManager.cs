@@ -49,7 +49,7 @@ namespace VirtualArea
 
             for (int i = 0; i < defaultBackgroundImageDatas.Length; i++)
             {
-                options.Add(new TMP_Dropdown.OptionData(defaultBackgroundImageDatas[i].name, defaultBackgroundImageDatas[i].sprite));
+                options.Add(new TMP_Dropdown.OptionData(defaultBackgroundImageDatas[i].name, defaultBackgroundImageDatas[i].sprite, Color.white));
             }
 
             backgroundDropdown.AddOptions(options);

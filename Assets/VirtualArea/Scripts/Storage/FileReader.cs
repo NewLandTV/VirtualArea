@@ -5,8 +5,18 @@ namespace VirtualArea
 {
     public class FileReader
     {
+        public static readonly string RESOURCE_PATH = Path.Combine(Application.persistentDataPath, "Resources");
+
+        /// <summary>
+        /// It converts data at a specific path, relative to the resources directory, into a sprite and retrieves it.
+        /// </summary>
+        /// <param name="path">Target to get data to sprite path.</param>
+        /// <returns>From local image to graphic sprite object.</returns>
         public static Sprite ReadFileAndToSprite(string path)
         {
+            // Access Resources Folder
+            path = Path.Combine(RESOURCE_PATH, path);
+
             if (!File.Exists(path))
             {
                 return null;

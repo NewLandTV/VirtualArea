@@ -21,7 +21,7 @@ public class Main : MonoBehaviour
             yield break;
         }
 
-        helloWorldAreaLink.Show(FileReader.ReadFileAndToSprite("E:\\UserData\\Images\\Group-A\\HelloWorld.png"), HelloWorldArea);
+        helloWorldAreaLink.Show(FileReader.ReadFileAndToSprite("HelloWorld.png"), HelloWorldArea);
 
         AreaLink informationAreaLink = BackgroundManager.instance.GetAreaLink();
 
@@ -30,7 +30,7 @@ public class Main : MonoBehaviour
             yield break;
         }
 
-        informationAreaLink.Show(FileReader.ReadFileAndToSprite("E:\\UserData\\Images\\Group-A\\Information.png"), InformationArea);
+        informationAreaLink.Show(FileReader.ReadFileAndToSprite("Information.png"), InformationArea);
 
         AreaLink simpleGameAreaLink = BackgroundManager.instance.GetAreaLink();
 
@@ -39,7 +39,7 @@ public class Main : MonoBehaviour
             yield break;
         }
 
-        simpleGameAreaLink.Show(FileReader.ReadFileAndToSprite("E:\\UserData\\Images\\Group-A\\SimpleGame.png"), SimpleGameArea);
+        simpleGameAreaLink.Show(FileReader.ReadFileAndToSprite("SimpleGame.png"), SimpleGameArea);
     }
     
     private void HelloWorldArea()
@@ -56,7 +56,7 @@ public class Main : MonoBehaviour
         helloWorldArea.Height = 540;
         helloWorldArea.Title = "Hello World";
 
-        helloWorldArea.BottomTools.SetTitleImage(FileReader.ReadFileAndToSprite("E:\\HelloWorld.png"));
+        helloWorldArea.BottomTools.SetTitleImage(FileReader.ReadFileAndToSprite("HelloWorld.png"));
 
         // Design elements
         GameObject helloWorldText = new GameObject("HelloWorldText", typeof(TextMeshProUGUI));
@@ -118,7 +118,7 @@ public class Main : MonoBehaviour
         informationArea.Height = 720;
         informationArea.Title = "Information";
 
-        informationArea.BottomTools.SetTitleImage(FileReader.ReadFileAndToSprite("E:\\Information.png"));
+        informationArea.BottomTools.SetTitleImage(FileReader.ReadFileAndToSprite("Information.png"));
 
         // Design elements
         DEText myText = DE.Create("MyText", DesignElementType.Text).GetComponent<DEText>();
@@ -128,13 +128,13 @@ public class Main : MonoBehaviour
         informationArea.AddDesignElements(myText.RectTransform, myImage.RectTransform);
 
         // MyText
-        myText.SetText("JkhTV subscriber is 460!").SetFontSize(65f).SetColor(Color.white).SetAlignment(TextAlignmentOptions.Center);
+        myText.SetText("JkhTV subscriber is 716!").SetFontSize(65f).SetColor(Color.white).SetAlignment(TextAlignmentOptions.Center);
 
         myText.RectTransform.position = Vector2.up * 820f;
         myText.RectTransform.sizeDelta = new Vector2(1000f, 70f);
 
         // MyImage
-        myImage.SetSprite(FileReader.ReadFileAndToSprite("E:\\UserData\\Youtube\\Channel\\¿Â∞Ê«ıtv\\Images\\Youtube_Thumbnail\\±∏µ∂¿⁄_N∏Ì_±‚≥‰\\400.png"));
+        myImage.SetSprite(FileReader.ReadFileAndToSprite("700.jpg"));
 
         myImage.RectTransform.position = Vector3.up * 500f;
         myImage.RectTransform.sizeDelta = new Vector2(960f, 540f);
@@ -157,7 +157,7 @@ public class Main : MonoBehaviour
         simpleGameArea.Height = 540;
         simpleGameArea.Title = "Simple Game";
 
-        simpleGameArea.BottomTools.SetTitleImage(FileReader.ReadFileAndToSprite("E:\\SimpleGame.png"));
+        simpleGameArea.BottomTools.SetTitleImage(FileReader.ReadFileAndToSprite("SimpleGame.png"));
 
         // Variables
         uint score = 0;
@@ -177,7 +177,7 @@ public class Main : MonoBehaviour
         scoreText.RectTransform.sizeDelta = new Vector2(800f, 55f);
 
         // PlayerImage
-        potatoImage.SetSprite(FileReader.ReadFileAndToSprite("E:\\Programming\\Projects\\Unity\\Game\\GrowingTown\\Assets\\Images\\Food\\Potato.png"));
+        potatoImage.SetSprite(FileReader.ReadFileAndToSprite("Potato.png"));
 
         potatoImage.RectTransform.position = Vector2.up * 420f;
         potatoImage.RectTransform.sizeDelta = new Vector2(128f, 128f);
