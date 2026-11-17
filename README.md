@@ -4,6 +4,10 @@ It's like an OS? unity package.
 
 [Playlist](https://www.youtube.com/playlist?list=PLG6918Ng_f9sAB-dFgFz8RWMOT-WUYu1C)
 
+# **Videos(영상)**
+
+[![Development Note p.395](https://img.youtube.com/vi/LeV96D6Tm6o/0.jpg)](https://www.youtube.com/watch?v=LeV96D6Tm6o)
+
 # **Links(링크)**
 
 * [JkhTV YouTube(장경혁tv)](https://www.youtube.com/channel/UC0lR1aYGgOhFioC3IsazUtw)
